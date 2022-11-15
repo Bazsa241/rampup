@@ -4,9 +4,11 @@ const TodoList = () => {
   return (
     <div className="TodoList">
       <h3>Todo list</h3>
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+      <div className="d-grid gap-2">
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+      </div>
     </div>
   );
 };
