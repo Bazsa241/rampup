@@ -1,17 +1,16 @@
 import logo from './logo.svg';
-import style from './Header.module.css';
 
 const Header = () => {
   return (
     <nav className="navbar navbar-dark bg-dark">
-      <div className="container-fluid d-flex justify-content-around">
+      <div className="container d-flex justify-content-between">
         <a className="navbar-brand d-flex align-items-center" href="#">
           <img src={logo} alt="Logo" width="30" height="24" className="d-inline-block" />
           TODO App
         </a>
         <div className="text-white d-flex">
           <div>Tasks</div>
-          <div className={style['unchecked-tasks']}>35</div>
+          <div className="px-2 ms-1 rounded-pill bg-danger ">35</div>
         </div>
       </div>
     </nav>

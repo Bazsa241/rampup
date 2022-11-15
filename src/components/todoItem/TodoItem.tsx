@@ -1,6 +1,6 @@
 const TodoItem = () => {
   return (
-    <div className="TodoItem container d-flex align-items-center justify-content-between border-bottom pb-2">
+    <div className="d-flex align-items-center justify-content-between border-bottom pb-2">
       <div className="form-check">
         <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
         <label className="form-check-label" htmlFor="flexCheckDefault">
