@@ -9,8 +9,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <NewItem />
-      <TodoList />
+      <div className="wrapper">
+        <NewItem />
+        <TodoList />
+      </div>
       {/* <Counter /> */}
     </div>
   );
