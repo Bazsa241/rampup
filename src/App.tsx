@@ -1,8 +1,6 @@
-import React from 'react';
-import { Counter } from './features/counter/Counter';
 import Header from './components/header/Header';
 import TodoList from './components/todoList/TodoList';
-import NewItem from './components/newItem/NewItem';
+import TodoForm from './components/todoForm/TodoForm';
 import './App.css';
 
 function App() {
@@ -10,10 +8,9 @@ function App() {
     <div className="App">
       <Header />
       <div className="wrapper">
-        <NewItem />
+        <TodoForm />
         <TodoList />
       </div>
-      {/* <Counter /> */}
     </div>
   );
 }
