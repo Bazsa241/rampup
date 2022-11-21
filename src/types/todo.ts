@@ -6,4 +6,5 @@ export interface ITodo {
 
 export interface ITodoState {
   todos: ITodo[];
+  edit: ITodo | null;
 }
