@@ -17,6 +17,7 @@ const NewTodo = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     dispatch(addTodo(createTodo()));
+    setInputState('');
   };
 
   return (

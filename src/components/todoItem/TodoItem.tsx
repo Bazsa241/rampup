@@ -1,10 +1,6 @@
 import { ITodo } from '../../types/todo';
 import { useAppDispatch } from '../../app/hooks';
-import {
-  removeTodo,
-  toggleTodoStatus,
-  addToEdit
-} from '../../app/reducers/todoSlice';
+import { removeTodo, toggleTodoStatus, addToEdit } from '../../app/reducers/todoSlice';
 
 const TodoItem = ({ id, description, isDone }: ITodo) => {
   const dispatch = useAppDispatch();
@@ -29,9 +25,7 @@ const TodoItem = ({ id, description, isDone }: ITodo) => {
           onClick={() => dispatch(addToEdit({ id, description, isDone }))}>
           <i className="bi bi-pencil-fill"></i>
         </button>
-        <button
-          className="btn btn-sm btn-outline-danger"
-          onClick={() => dispatch(removeTodo(id))}>
+        <button className="btn btn-sm btn-outline-danger" onClick={() => dispatch(removeTodo(id))}>
           <i className="bi bi-trash-fill"></i>
         </button>
       </div>
